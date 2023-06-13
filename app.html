@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
     <script src="jogo.js"></script>
     <title>Mata Mosquito</title>
 </head>
-<body onresize="ajusteTamanhoPalcoJogo()">
-    
-</body>
+    <body onresize="ajustaTamanhoPalcoJogo()">
+        <div class="painel">
+            <div class="vidas">
+                <img src="imagens/coracao_vazio.png">
+                <img src="imagens/coracao_cheio.png">
+                <img src="imagens/coracao_cheio.png">
+            </div>
+            <div class="cronometro">
+                Tempo restante: ?
+            </div>
+        </div>
+        <script>
+            setInterval(function(){
+                posicaoRandomica()
+            }, 1000)
+        </script>
+    </body>
 </html>
